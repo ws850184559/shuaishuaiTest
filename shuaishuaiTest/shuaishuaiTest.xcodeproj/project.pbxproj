@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1D9FF8421FCD124500EFB408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FF8411FCD124500EFB408 /* AppDelegate.swift */; };
-		1D9FF8441FCD124500EFB408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FF8431FCD124500EFB408 /* ViewController.swift */; };
-		1D9FF8471FCD124500EFB408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9FF8451FCD124500EFB408 /* Main.storyboard */; };
 		1D9FF8491FCD124500EFB408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9FF8481FCD124500EFB408 /* Assets.xcassets */; };
 		1D9FF84C1FCD124500EFB408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9FF84A1FCD124500EFB408 /* LaunchScreen.storyboard */; };
 		1D9FF8571FCD124600EFB408 /* shuaishuaiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FF8561FCD124600EFB408 /* shuaishuaiTestTests.swift */; };
 		1D9FF8621FCD124600EFB408 /* shuaishuaiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9FF8611FCD124600EFB408 /* shuaishuaiTestUITests.swift */; };
+		1DF211AF1FCD414400747EA3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF211AE1FCD414400747EA3 /* MainViewController.swift */; };
+		1DF211B11FCD46B300747EA3 /* WSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF211B01FCD46B300747EA3 /* WSBaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 /* Begin PBXFileReference section */
 		1D9FF83E1FCD124500EFB408 /* shuaishuaiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shuaishuaiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9FF8411FCD124500EFB408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D9FF8431FCD124500EFB408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D9FF8461FCD124500EFB408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D9FF8481FCD124500EFB408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D9FF84B1FCD124500EFB408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D9FF84D1FCD124500EFB408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		1D9FF85D1FCD124600EFB408 /* shuaishuaiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shuaishuaiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9FF8611FCD124600EFB408 /* shuaishuaiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shuaishuaiTestUITests.swift; sourceTree = "<group>"; };
 		1D9FF8631FCD124600EFB408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF211AE1FCD414400747EA3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1DF211B01FCD46B300747EA3 /* WSBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSBaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,13 @@
 		1D9FF8401FCD124500EFB408 /* shuaishuaiTest */ = {
 			isa = PBXGroup;
 			children = (
+				1DF2119E1FCD410A00747EA3 /* Main */,
+				1DF211A21FCD410A00747EA3 /* Home */,
+				1DF211AA1FCD410A00747EA3 /* Live */,
+				1DF211A61FCD410A00747EA3 /* Follow */,
+				1DF2119A1FCD410A00747EA3 /* Profile */,
+				1DF211991FCD410900747EA3 /* Tools */,
 				1D9FF8411FCD124500EFB408 /* AppDelegate.swift */,
-				1D9FF8431FCD124500EFB408 /* ViewController.swift */,
-				1D9FF8451FCD124500EFB408 /* Main.storyboard */,
 				1D9FF8481FCD124500EFB408 /* Assets.xcassets */,
 				1D9FF84A1FCD124500EFB408 /* LaunchScreen.storyboard */,
 				1D9FF84D1FCD124500EFB408 /* Info.plist */,
@@ -123,6 +127,170 @@
 				1D9FF8631FCD124600EFB408 /* Info.plist */,
 			);
 			path = shuaishuaiTestUITests;
+			sourceTree = "<group>";
+		};
+		1DF211991FCD410900747EA3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1DF2119A1FCD410A00747EA3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1DF2119B1FCD410A00747EA3 /* Controller */,
+				1DF2119C1FCD410A00747EA3 /* Model */,
+				1DF2119D1FCD410A00747EA3 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1DF2119B1FCD410A00747EA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DF2119C1FCD410A00747EA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DF2119D1FCD410A00747EA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DF2119E1FCD410A00747EA3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1DF2119F1FCD410A00747EA3 /* Controller */,
+				1DF211A01FCD410A00747EA3 /* Model */,
+				1DF211A11FCD410A00747EA3 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1DF2119F1FCD410A00747EA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DF211B01FCD46B300747EA3 /* WSBaseViewController.swift */,
+				1DF211AE1FCD414400747EA3 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DF211A01FCD410A00747EA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DF211A11FCD410A00747EA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DF211A21FCD410A00747EA3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1DF211A31FCD410A00747EA3 /* Controller */,
+				1DF211A41FCD410A00747EA3 /* Model */,
+				1DF211A51FCD410A00747EA3 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1DF211A31FCD410A00747EA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DF211A41FCD410A00747EA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DF211A51FCD410A00747EA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DF211A61FCD410A00747EA3 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				1DF211A71FCD410A00747EA3 /* Controller */,
+				1DF211A81FCD410A00747EA3 /* Model */,
+				1DF211A91FCD410A00747EA3 /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		1DF211A71FCD410A00747EA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DF211A81FCD410A00747EA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DF211A91FCD410A00747EA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DF211AA1FCD410A00747EA3 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				1DF211AB1FCD410A00747EA3 /* Controller */,
+				1DF211AC1FCD410A00747EA3 /* Model */,
+				1DF211AD1FCD410A00747EA3 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		1DF211AB1FCD410A00747EA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1DF211AC1FCD410A00747EA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DF211AD1FCD410A00747EA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +402,6 @@
 			files = (
 				1D9FF84C1FCD124500EFB408 /* LaunchScreen.storyboard in Resources */,
 				1D9FF8491FCD124500EFB408 /* Assets.xcassets in Resources */,
-				1D9FF8471FCD124500EFB408 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D9FF8441FCD124500EFB408 /* ViewController.swift in Sources */,
 				1D9FF8421FCD124500EFB408 /* AppDelegate.swift in Sources */,
+				1DF211AF1FCD414400747EA3 /* MainViewController.swift in Sources */,
+				1DF211B11FCD46B300747EA3 /* WSBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +464,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1D9FF8451FCD124500EFB408 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D9FF8461FCD124500EFB408 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D9FF84A1FCD124500EFB408 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -426,6 +586,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2YGURZKTP;
 				INFOPLIST_FILE = shuaishuaiTest/Info.plist;
@@ -441,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2YGURZKTP;
 				INFOPLIST_FILE = shuaishuaiTest/Info.plist;
